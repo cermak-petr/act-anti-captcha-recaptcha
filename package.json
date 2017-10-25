@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "apify": "latest",
-    "underscore": "latest",
+    "bluebird": "latest",
     "request-promise": "latest",
     "node-base64-image": "latest"
   }
