@@ -11,7 +11,7 @@
   "dependencies": {
     "apify": "latest",
     "underscore": "latest",
-    "request-promise": "latest,
+    "request-promise": "latest",
     "node-base64-image": "latest"
   }
 }
