@@ -6,9 +6,9 @@ You need to have an anti-captcha subscription to be able to use it.
 __The act accepts input in the following format:__
 ```javascript
 { 
-    "key": "ANTI_CAPTCHA_KEY",
-    "webUrl": "PROTECTED_WEBSITE_URL",
-    "siteKey": "CAPTCHA-DATA-SITEKEY"
+    "key": ANTI_CAPTCHA_KEY,
+    "webUrl": PROTECTED_WEBSITE_URL,
+    "siteKey": CAPTCHA-DATA-SITEKEY
 }
 ```
 
