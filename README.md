@@ -8,11 +8,11 @@ __The act accepts input in the following format:__
 { 
     "key": ANTI_CAPTCHA_KEY,
     "webUrl": PROTECTED_WEBSITE_URL,
-    "siteKey": CAPTCHA-DATA-SITEKEY
+    "siteKey": CAPTCHA_DATA_SITEKEY
 }
 ```
 
-You can find __CAPTCHA-DATA-SITEKEY__ on the protected website.
+You can find __CAPTCHA_DATA_SITEKEY__ on the protected website.
 It is usually in a __"data-sitekey"__ attribute in an element with a __"g-recaptcha"__ class or id.
 
-Output is the resulting g-recaptcha-response which you have to send the same way the protected website would. Usually it can be send in a form input with __name="g-recaptcha-response"__.
+Output is the resulting g-recaptcha-response which you have to send the same way the protected website would. Usually it can be sent in a form input with __name="g-recaptcha-response"__.
