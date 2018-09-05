@@ -87,12 +87,23 @@ Apify.main(async () => {
     }
     
     console.log("Solving re-captcha with Anticaptcha: " + input.webUrl);
+    const hasProxy = input.proxyType || input.proxyAddress || input.proxyPort || 
+        input.proxyLogin || input.proxyPassword || input.userAgent || input.cookies;
     const anticaptcha = new Anticaptcha(input.key);
     const task = {
-        "type": "NoCaptchaTaskProxyless",
+        "type": hasProxy ? "NoCaptchaTask" : "NoCaptchaTaskProxyless",
         "websiteURL": input.webUrl,
         "websiteKey": input.siteKey
     };
+    if(hasProxy){
+        task.proxyType = input.proxyType || '';
+        task.proxyAddress = input.proxyAddress || '';
+        task.proxyPort = input.proxyPort || '';
+        task.proxyLogin = input.proxyLogin || '';
+        task.proxyPassword = input.proxyPassword || '';
+        task.userAgent = input.userAgent || '';
+        task.cookies = input.cookies || '';
+    }
     const taskId = await anticaptcha.createTask(task);
     const result = await anticaptcha.waitForTaskResult(taskId, 600000);
     await Apify.setValue('OUTPUT', result.solution.gRecaptchaResponse);
