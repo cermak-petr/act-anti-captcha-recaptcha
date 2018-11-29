@@ -9,7 +9,7 @@
     "url": "https://github.com/cermak-petr/act-anti-captcha-recaptcha"
   },
   "dependencies": {
-    "apify": "^0.4.37",
+    "apify": "^0.9.13",
     "bluebird": "^3.5.1",
     "request-promise": "^4.2.2",
     "node-base64-image": "^1.0.4"
