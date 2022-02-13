@@ -101,7 +101,7 @@ Apify.main(async () => {
     }
     const taskId = await anticaptcha.createTask(task);
     const result = await anticaptcha.waitForTaskResult(taskId, 600000);
-    const gRecaptchaResponse = {...result.solution.gRecaptchaResponse, {taskId}};
+    const gRecaptchaResponse = {...result.solution.gRecaptchaResponse, ...{taskId}};
     await Apify.setValue('OUTPUT', gRecaptchaResponse);
     console.log('g-recaptcha-response: ', gRecaptchaResponse);
     
