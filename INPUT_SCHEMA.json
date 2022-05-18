@@ -1,5 +1,6 @@
 {
     "title": "Anticaptcha recaptcha",
+    "description": "This actor is to be used by calling from another actor.",
     "type": "object",
     "schemaVersion": 1,
     "properties": {
@@ -7,59 +8,70 @@
             "title": "Anticaptcha key",
             "type": "string",
             "description": "The Anticaptcha key you get from your subscription from the anti-captcha.com service",
+            "editor": "textfield"
         },
         "webUrl": {
             "title": "Protected website URL",
             "type": "string",
-            "description": "URL of the website you are trying to scrape"
+            "description": "URL of the website you are trying to scrape",
+            "editor": "textfield"
         },
         "siteKey": {
             "title": "Captcha data sitekey",
             "type": "string",
-            "description": "You can find CAPTCHA_DATA_SITEKEY on the protected website. It is usually in a 'data-sitekey' attribute in an element with a 'g-recaptcha' class or id"
+            "description": "You can find CAPTCHA_DATA_SITEKEY on the protected website. It is usually in a 'data-sitekey' attribute in an element with a 'g-recaptcha' class or id",
+            "editor": "textfield"
         },
         "proxyType": {
             "title": "Proxy type",
             "type": "string",
             "prefill": "http",
+            "description": "Proxy type",
             "sectionCaption": "Optional settings",
-            "sectionDescription": "Some sites may require the captcha to be solved from the same IP address and/or browser, in such case it is possible to use the following input attributes (in addition to the default ones)."
+            "sectionDescription": "Some sites may require the captcha to be solved from the same IP address and/or browser, in such case it is possible to use the following input attributes (in addition to the default ones).",
+            "editor": "textfield"
         },
         "proxyAddress": {
             "title": "Proxy address",
             "type": "string",
             "description": "Proxy address",
-            "prefill": "8.8.8.8"
+            "prefill": "8.8.8.8",
+            "editor": "textfield"
         },
         "proxyPort": {
             "title": "Proxy port",
-            "type": "number",
+            "type": "integer",
             "description": "Proxy port",
-            "prefill": 8080
+            "prefill": 8080,
+            "editor": "number"
         },
         "proxyLogin": {
             "title": "Proxy login",
             "type": "string",
             "description": "Proxy login",
-            "prefill": "theLogin"
+            "prefill": "theLogin",
+            "editor": "textfield"
         },
         "proxyPassword": {
             "title": "Proxy password",
             "type": "string",
             "description": "Proxy password",
-            "prefill": "thePassword"
+            "prefill": "thePassword",
+            "editor": "textfield"
         },
         "userAgent": {
             "title": "User agent",
             "type": "string",
             "description": "User agent",
-            "prefill": "Opera 6.0"
+            "prefill": "Opera 6.0",
+            "editor": "textfield"
         },
         "cookies": {
             "title": "Cookies",
             "type": "string",
             "description": "Cookies",
-            "prefill": "name=value; name2=value2"
+            "prefill": "name=value; name2=value2",
+            "editor": "textfield"
         }
     },
     "required": ["key", "webUrl", "siteKey"]
