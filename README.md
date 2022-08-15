@@ -1,6 +1,13 @@
 ## What does Anti Captcha Recaptcha do?
 This is an automation tool designed to streamline the process of solving [Google reCAPTCHAs](https://www.google.com/recaptcha/about/) using the [anti-captcha.com](http://anti-captcha.com) service. Solving reCAPTCHAs allows you to scrape reCAPTCHA-protected websites.
 
+## Demo credits
+There is demo credits; they are fully automatic: [Demo credit request page](https://anti-captcha.com/clients/finance/demo).
+
+Note that if the system does not accept your phone number, we can't change it or provide credit manually.
+
+DO NOT ASK to provide you a demo credit without the phone number. No phone number = no demo credits!
+
 ## What can I use it for?
 If you're web scraping and your scraper is unable to solve the reCAPTCHA, your bot might be blocked by the website. This actor should make it easier to solve that issue by automating the use of the Anti Captcha service.
 
