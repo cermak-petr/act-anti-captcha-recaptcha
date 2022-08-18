@@ -1,8 +1,11 @@
-{ 
+{
   "name": "anti-captcha-recaptcha",
   "version": "1.0.0",
   "description": "Apify act for solving google recaptcha using the anti-captcha.com service",
   "main": "main.js",
+  "scripts": {
+    "start": "node ./main.js"
+  },
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
